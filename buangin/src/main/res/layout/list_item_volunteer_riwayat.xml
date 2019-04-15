@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/voulunteer_img_voucher"
+        android:layout_width="192dp"
+        android:layout_height="96dp"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:id="@+id/volunteer_judul_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kuota_voucher"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/voulunteer_img_voucher"
+        android:textSize="20sp"
+        tools:text="Judul Voucher" />
+
+    <ImageView
+        android:id="@+id/volunteer_logo_mitra_voucher"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/volunteer_judul_voucher"
+        android:layout_toEndOf="@id/voulunteer_img_voucher"
+        android:layout_toRightOf="@id/img_voucher"
+        android:src="@drawable/ic_jumlah_poin" />
+
+    <TextView
+        android:id="@+id/volunteer_mitra_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volunteer_judul_voucher"
+        android:layout_marginLeft="6dp"
+        android:layout_toEndOf="@id/volunteer_logo_harga_voucher"
+        android:layout_toRightOf="@id/volunteer_logo_harga_voucher"
+        android:textSize="12sp"
+        tools:text="nama mitra" />
+
+    <ImageView
+        android:id="@+id/volunteer_logo_harga_voucher"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/volunteer_logo_mitra_voucher"
+        android:layout_toEndOf="@id/voulunteer_img_voucher"
+        android:layout_toRightOf="@id/img_voucher"
+        android:src="@drawable/ic_jumlah_poin" />
+
+    <TextView
+        android:id="@+id/volunteer_harga_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volunteer_mitra_voucher"
+        android:layout_marginLeft="6dp"
+        android:layout_toEndOf="@id/volunteer_logo_harga_voucher"
+        android:layout_toRightOf="@id/volunteer_logo_harga_voucher"
+        android:textSize="12sp"
+        tools:text="150 Poin" />
+
+    <ImageView
+        android:id="@+id/volunteer_logo_status_voucher"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/volunteer_logo_harga_voucher"
+        android:layout_toEndOf="@id/voulunteer_img_voucher"
+        android:layout_toRightOf="@id/img_voucher"
+        android:src="@drawable/ic_jumlah_poin" />
+
+    <TextView
+        android:id="@+id/volunteer_kode_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volunteer_harga_voucher"
+        android:layout_marginLeft="6dp"
+        android:layout_toEndOf="@id/volunteer_logo_harga_voucher"
+        android:layout_toRightOf="@id/volunteer_logo_harga_voucher"
+        android:textSize="12sp"
+        tools:text="status" />
+
+    <ImageView
+        android:id="@+id/volunteer_logo_kode_voucher"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/volunteer_logo_status_voucher"
+        android:layout_toEndOf="@id/voulunteer_img_voucher"
+        android:layout_toRightOf="@id/img_voucher"
+        android:src="@drawable/ic_jumlah_poin" />
+
+    <TextView
+        android:id="@+id/volunteer_status_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volunteer_kode_voucher"
+        android:layout_marginLeft="6dp"
+        android:layout_toEndOf="@id/volunteer_logo_harga_voucher"
+        android:layout_toRightOf="@id/volunteer_logo_harga_voucher"
+        android:textSize="12sp"
+        tools:text="kode" />
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_beli_voucher"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="32dp"-->
+    <!--android:layout_below="@id/harga_voucher"-->
+    <!--android:layout_marginTop="4dp"-->
+    <!--android:layout_toEndOf="@id/logo_harga_voucher"-->
+    <!--android:layout_toRightOf="@id/logo_harga_voucher"-->
+    <!--android:background="@color/warnaGelap"-->
+    <!--android:text="Beli"-->
+    <!--android:textSize="14sp" />-->
+
+</RelativeLayout>

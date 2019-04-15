@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="8dp">
+
+    <ImageView
+        android:id="@+id/img_voucher"
+        android:layout_width="128dp"
+        android:layout_height="96dp"
+        android:layout_margin="8dp"
+        android:background="#eeeeee"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_camera_alt_black_24dp" />
+
+    <TextView
+        android:id="@+id/kuota_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_oval_white"
+        android:backgroundTint="@color/warnaGray"
+        android:padding="6dp"
+        tools:text="Sisa Kuota 30" />
+
+    <TextView
+        android:id="@+id/judul_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kuota_voucher"
+        android:layout_toEndOf="@id/img_voucher"
+        android:layout_toRightOf="@id/img_voucher"
+        android:textSize="24sp"
+        tools:text="KFC" />
+
+    <ImageView
+        android:id="@+id/logo_harga_voucher"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/judul_voucher"
+        android:layout_toEndOf="@id/img_voucher"
+        android:layout_toRightOf="@id/img_voucher"
+        android:src="@drawable/ic_jumlah_poin" />
+
+    <TextView
+        android:id="@+id/harga_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul_voucher"
+        android:layout_marginLeft="6dp"
+        android:layout_toEndOf="@id/logo_harga_voucher"
+        android:layout_toRightOf="@id/logo_harga_voucher"
+        android:textSize="16sp"
+        tools:text="150 Poin" />
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_beli_voucher"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="32dp"-->
+    <!--android:layout_below="@id/harga_voucher"-->
+    <!--android:layout_marginTop="4dp"-->
+    <!--android:layout_toEndOf="@id/logo_harga_voucher"-->
+    <!--android:layout_toRightOf="@id/logo_harga_voucher"-->
+    <!--android:background="@color/warnaGelap"-->
+    <!--android:text="Beli"-->
+    <!--android:textSize="14sp" />-->
+
+</RelativeLayout>

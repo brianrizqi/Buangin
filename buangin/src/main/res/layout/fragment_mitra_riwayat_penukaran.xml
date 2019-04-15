@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Mitra.RiwayatPenukaranFragment">
+
+    <ImageButton
+        android:id="@+id/mitra_btn_cek_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_bulat_hijau"
+        android:padding="7dp"
+        android:src="@drawable/ic_cari" />
+
+    <ImageButton
+        android:id="@+id/mitra_btn_hapus_kode_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/mitra_btn_cek_voucher"
+        android:background="@drawable/ic_bulat_hapus"
+        android:padding="7dp"
+        android:src="@drawable/ic_hapus" />
+
+    <EditText
+        android:id="@+id/mitra_input_kode_voucher"
+        android:layout_width="match_parent"
+        android:hint="Masukkan kode voucher"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@id/mitra_btn_hapus_kode_voucher" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mitra_input_kode_voucher"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_riwayatPenukaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

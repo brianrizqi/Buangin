@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Mitra.TabBuatVoucherFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/foto_produk_voucher"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_img_voucher" />
+
+            <EditText
+                android:id="@+id/input_voucher_namaProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Produk"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/input_voucher_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Deskripsi"
+                android:inputType="text"
+                android:maxLines="5" />
+
+            <EditText
+                android:id="@+id/input_voucher_poin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Harga (Poin)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/input_voucher_jumlahKuota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah Kuota"
+                android:inputType="number" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:paddingBottom="100dp">
+
+                <Button
+                    android:id="@+id/btn_voucher_tambah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/warnaUtama"
+                    android:text="Tambah"
+                    android:textAllCaps="false"
+                    android:textColor="@color/warnaPutih" />
+
+                <Button
+                    android:id="@+id/btn_voucher_batal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="16dp"
+                    android:background="@color/warnaKuning"
+                    android:text="Batal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/warnaPutih" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="warnaGelap">#11998e</color>
+    <color name="warnaTerang">#38ef7d</color>
+    <color name="warnaPutih">#ffffff</color>
+    <color name="warnaGray">#d2d2d2</color>
+    <color name="warnaTransparan">#00000000</color>
+    <color name="warnaKuning">#ffbb00</color>
+
+    <color name="warnaNav">#2D9686</color>
+    <color name="warnaBottom">#39B07A</color>
+    <color name="warnaUtama">#39B07A</color>
+    <color name="warnaTransparanPutih">#80ffffff</color>
+    <color name="warnaTransparanAbu">#80585858</color>
+
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+</resources>

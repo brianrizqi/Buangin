@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/style_background_gradasi"
+    tools:context=".Welcome">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:layout_above="@id/text_admin"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_logo_awal" />
+
+    <TextView
+        android:id="@+id/text_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:text="Admin BUANG.IN"
+        android:textColor="@color/warnaPutih"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/welcome_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:indeterminateTint="@color/warnaPutih" />
+
+</RelativeLayout>

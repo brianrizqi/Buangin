@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_verifikasi_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="80dp"-->
+                    <!--android:src="@drawable/bg_img_voucher" />-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_user_bank_sampah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="bank sampah"
+                        android:textColor="@color/warnaPutih"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/text_level_bank_sampah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="level"
+                        android:textColor="@color/warnaPutih"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:id="@+id/input_kode_sampah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar_verifikasi_2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/btn_hapus_kode"
+        android:hint="kode sampah"
+        android:inputType="text"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/btn_hapus_kode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar_verifikasi_2"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/btn_cek_kode_2"
+        android:background="@drawable/ic_bulat_hapus"
+        android:foreground="?attr/actionBarItemBackground"
+        android:padding="5dp"
+        android:src="@drawable/ic_hapus" />
+
+    <ImageButton
+        android:id="@+id/btn_cek_kode_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/appbar_verifikasi_2"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_bulat_hijau"
+        android:foreground="?attr/actionBarItemBackground"
+        android:padding="5dp"
+        android:src="@drawable/ic_cari" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/input_kode_sampah"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_verifikasi_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

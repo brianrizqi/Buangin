@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout_masuk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/style_gradasi_1"
+    tools:context=".view.HalamanMasuk">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/tongkosong"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:layout_marginLeft="180dp"-->
+        <!--android:src="@drawable/dialogmirror"-->
+        <!--android:visibility="gone" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/teks1"-->
+        <!--android:layout_width="134dp"-->
+        <!--android:layout_height="99dp"-->
+        <!--android:layout_above="@id/layout_masuk"-->
+        <!--android:layout_marginLeft="255dp"-->
+        <!--android:layout_marginBottom="-111dp"-->
+        <!--android:text="Ketikkanemail yang di daftarkan (ex : test@gmail.com)"-->
+        <!--android:textColor="@color/warnaPutih"-->
+        <!--android:textSize="14sp"-->
+        <!--android:visibility="gone"/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/tongkosong2"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_marginLeft="180dp"-->
+        <!--android:layout_marginTop="600dp"-->
+        <!--android:src="@drawable/dialoggede"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/teks2"-->
+        <!--android:layout_width="108dp"-->
+        <!--android:layout_height="77dp"-->
+        <!--android:layout_above="@id/layout_masuk"-->
+        <!--android:layout_marginLeft="190dp"-->
+        <!--android:layout_marginBottom="-468dp"-->
+        <!--android:text="Klik untuk buat akun baru dan isi data diri anda"-->
+        <!--android:textColor="@color/warnaPutih"-->
+        <!--android:textSize="15sp"-->
+        <!--android:visibility="gone" />-->
+
+
+
+    <ImageView
+
+        android:id="@+id/img_logo"
+        android:layout_width="80dp"
+
+        android:layout_height="80dp"
+        android:layout_above="@id/teks_masuk"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/style_lingkaran"
+        android:padding="8dp"
+        android:src="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/teks_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_masuk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Sign In"
+        android:textColor="@color/warnaPutih"
+        android:textSize="32sp" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_masukEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/warnaPutih"
+                android:textColorHint="@color/warnaGray"
+                android:textSize="16sp" />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_masukPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan password"
+                android:inputType="textPassword"
+                android:textColor="@color/warnaPutih"
+                android:textColorHint="@color/warnaGray"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/layout_masuk"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_oval_white"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Masuk"
+            android:textAllCaps="false"
+            android:textColor="@color/warnaTerang"
+            android:textSize="24sp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_tutorial"-->
+        <!--android:layout_width="173dp"-->
+        <!--android:layout_height="37dp"-->
+        <!--android:layout_below="@id/layout_masuk"-->
+        <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginTop="94dp"-->
+    <!--android:layout_marginRight="40dp"-->
+        <!--android:background="@drawable/bg_oval_white"-->
+        <!--android:foreground="?android:attr/selectableItemBackground"-->
+        <!--android:text="Saya Bingung"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@color/warnaTerang"-->
+        <!--android:textSize="24sp" />-->
+
+    //message
+
+    <ImageView
+    android:visibility="gone"
+    android:id="@+id/msgemail"
+    android:layout_width="225dp"
+    android:layout_height="238dp"
+    android:layout_below="@id/layout_masuk"
+    android:layout_marginLeft="1dp"
+    android:layout_marginTop="11dp"
+    android:layout_marginRight="40dp"
+    android:contentDescription="@string/app_name"
+    android:src="@drawable/email" />
+
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/msgtombol"
+        android:layout_width="225dp"
+        android:layout_height="238dp"
+        android:layout_below="@id/layout_masuk"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/msgtombol" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/msgpassword"
+        android:layout_width="225dp"
+        android:layout_height="238dp"
+        android:layout_below="@id/layout_masuk"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/pass" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/msgdaftar"
+        android:layout_width="225dp"
+        android:layout_height="238dp"
+        android:layout_below="@id/layout_masuk"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/daftar" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/msgreminder"
+        android:layout_width="225dp"
+        android:layout_height="238dp"
+        android:layout_below="@id/layout_masuk"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/reminder" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/tgemail"
+        android:layout_width="76dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/layout_masuk"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-202dp"
+        android:layout_marginRight="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tangankiri" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/tgpassword"
+        android:layout_width="74dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/layout_masuk"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-118dp"
+        android:layout_marginRight="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tangankiri" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/tgdaftar"
+        android:layout_width="205dp"
+        android:layout_height="2005dp"
+        android:layout_below="@id/layout_masuk"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginRight="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tangankan1"
+
+        />
+
+    <TextView
+
+        android:id="@+id/btn_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="134dp"
+        android:text="Buat akun baru"
+        android:textColor="@color/warnaPutih"
+        android:textSize="16sp" />
+
+
+
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_ok"-->
+        <!--android:layout_width="173dp"-->
+        <!--android:layout_height="37dp"-->
+        <!--android:layout_below="@id/layout_masuk"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="93dp"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:background="@drawable/bg_oval_white"-->
+        <!--android:foreground="?android:attr/selectableItemBackground"-->
+        <!--android:text="Saya Paham"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@color/warnaTerang"-->
+        <!--android:textSize="24sp"-->
+        <!--android:visibility="gone" />-->
+
+
+
+    //tong bergerak
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/tong"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/tong" />
+
+
+    </RelativeLayout>
+
+    <Button
+    android:visibility="gone"
+    android:id="@+id/btn_info"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="23dp"
+    android:layout_marginRight="37dp"
+    android:background="@drawable/circle"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:text="i"
+    android:textAllCaps="false"
+    android:textColor="@color/warnaTerang"
+    android:textSize="24sp" />
+
+    <Button
+
+        android:id="@+id/btn_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="37dp"
+        android:background="@drawable/circle"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="x"
+        android:textAllCaps="false"
+        android:textColor="@color/warnaTerang"
+        android:textSize="24sp" />
+
+
+
+
+</RelativeLayout>

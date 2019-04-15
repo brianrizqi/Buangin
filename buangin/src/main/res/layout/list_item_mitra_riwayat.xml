@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="8dp">
+
+    <ImageView
+        android:id="@+id/img_voucher"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_margin="8dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/img_voucher">
+
+        <TextView
+            android:id="@+id/teks_tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal\t\t\t\t: "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/teks_tukar_voucher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks_tanggal"
+            android:layout_marginTop="4dp"
+            android:text="Tukar Voucer\t: "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/teks_tanggal"
+            android:layout_toRightOf="@id/teks_tanggal"
+            android:textSize="14sp"
+            tools:text="28 Oktober 2018" />
+
+        <TextView
+            android:id="@+id/nama_pemilik_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks_tanggal"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/teks_tukar_voucher"
+            android:layout_toRightOf="@id/teks_tukar_voucher"
+            android:textSize="14sp"
+            tools:text="Seblak Abah" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

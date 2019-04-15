@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_vol_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_home_white"
+        android:title="Beranda"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_vol_sampah"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_sampah_white"
+        android:title="Sampahku"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_vol_poin"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_poin_white"
+        android:title="Info Poin"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_vol_bank"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_bank_white"
+        android:title="Bank Sampah"
+        app:showAsAction="ifRoom" />
+
+</menu>

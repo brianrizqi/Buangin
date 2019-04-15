@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_mit_home"
+        android:icon="@drawable/ic_nav_home_white"
+        android:title="Beranda"
+        android:tooltipText="Beranda" />
+
+    <item
+        android:id="@+id/nav_mit_daftar_voucher"
+        android:icon="@drawable/ic_attach_money_black_24dp"
+        android:title="Daftar Voucher"
+        android:tooltipText="Daftar Voucher" />
+
+    <item
+        android:id="@+id/nav_mit_riwayat_penukaran"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="Riwayat Penukaran Voucher"
+        android:tooltipText="Riwayat Penukaran Voucher" />
+
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_bawah_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_home_white"
+        android:title="Beranda"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_bawah_verifikasi"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_verifikasi"
+        android:title="Verifikasi"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_bawah_perusahaan"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_perusahaan"
+        android:title="Daftar Perusahaan"
+        app:showAsAction="ifRoom" />
+
+</menu>

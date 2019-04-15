@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_bawah_home_perusahaan"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_home_white"
+        android:title="Beranda"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_bawah_ubah_harga_perusahaan"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_ubah_harga"
+        android:title="Daftar Bank Sampah"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+</menu>

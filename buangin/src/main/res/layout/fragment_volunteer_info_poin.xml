@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.Volunteer.InfoPoinFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_infopoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/warnaPutih"
+        android:gravity="center"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/warnaUtama">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="80dp"-->
+                    <!--android:background="@drawable/style_lingkaran"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--android:src="@drawable/foto_profil" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/infopoin_nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Nama Volunteer"
+                        android:textColor="@color/warnaPutih"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/infopoin_level"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="level"
+                        android:textColor="@color/warnaPutih"
+                        android:textSize="16sp"
+                        android:textStyle="italic|bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:text="Total Poin : "
+                            android:textColor="@color/warnaPutih"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/infopoin_poin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/warnaPutih"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Poin"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/warnaPutih"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_infopoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/warnaPutih"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/warnaUtama"
+        app:tabTextColor="@color/warnaGray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_infopoin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

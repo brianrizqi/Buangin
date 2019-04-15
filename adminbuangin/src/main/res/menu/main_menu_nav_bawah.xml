@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/main_nav_harga"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_harga"
+        android:title="Daftar Harga"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/main_nav_pengguna"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_pengguna"
+        android:title="Daftar Pengguna"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/main_nav_poin"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_poin"
+        android:title="Poin"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/daftar_pengguna_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/daftar_btn_kembali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/warnaTransparan"
+                    android:src="@drawable/ic_kembali" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/daftar_btn_kembali"
+                    android:text="Daftar Pengguna Baru"
+                    android:textColor="@color/warnaPutih"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/daftar_btn_simpan"
+        android:layout_below="@+id/daftar_pengguna_appbar"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                    <!--android:id="@+id/daftar_gambar"-->
+                    <!--android:layout_width="130dp"-->
+                    <!--android:layout_height="130dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:src="@drawable/img_foto" />-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/daftar_btn_upload_gambar"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@id/daftar_gambar"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="-24dp"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:background="@drawable/style_bulat_gray"-->
+                    <!--android:foreground="?android:attr/actionBarItemBackground"-->
+                    <!--android:padding="8dp"-->
+                    <!--android:src="@drawable/ic_foto" />-->
+            <!--</RelativeLayout>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/daftar_nama_pemilik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Pemilik"
+                    android:inputType="text"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/daftar_nama_instansi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Instansi"
+                    android:inputType="text"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/daftar_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="E-Mail"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/daftar_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="text"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/daftar_alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alamat"
+                    android:inputType="text"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/daftar_telepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No. Telp"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/daftar_spinner_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1">
+
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/daftar_poin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Poin"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/daftar_btn_simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/style_btn_hijau"
+        android:foreground="?android:attr/actionBarItemBackground"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="Simpan"
+        android:textAllCaps="false"
+        android:textColor="@color/warnaPutih"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.Volunteer.HomeVolunteer"
+    tools:showIn="@layout/app_bar_volunteer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/container_volunteer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/nav_volunteer">
+
+        </FrameLayout>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/nav_volunteer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/warnaBottom"
+            app:itemIconTint="@color/warnaPutih"
+            app:itemTextColor="@color/warnaPutih"
+            app:menu="@menu/menu_nav_volunteer">
+
+        </android.support.design.widget.BottomNavigationView>
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/tongdalam"
+            android:layout_width="124dp"
+            android:layout_height="122dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/tong" />
+
+        <Button
+            android:id="@+id/btn_infoHome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="37dp"
+            android:background="@drawable/circle"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="i"
+            android:textAllCaps="false"
+            android:textColor="@color/warnaTerang"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <Button
+        android:id="@+id/btn_closeHome"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="37dp"
+        android:background="@drawable/circle"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="x"
+        android:textAllCaps="false"
+        android:textColor="@color/warnaTerang"
+        android:textSize="24sp"
+         />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/msgHome"
+            android:layout_width="225dp"
+            android:layout_height="238dp"
+            android:layout_below="@id/layout_masuk"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="40dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/voluntirhome" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/msg1"
+            android:layout_width="225dp"
+            android:layout_height="238dp"
+            android:layout_below="@id/layout_masuk"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="40dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/sampahku" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/msg2"
+            android:layout_width="225dp"
+            android:layout_height="238dp"
+            android:layout_below="@id/layout_masuk"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="40dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/poinku" />
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/msg3"
+            android:layout_width="225dp"
+            android:layout_height="238dp"
+            android:layout_below="@id/layout_masuk"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="40dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/banksampahku" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/msg4"
+            android:layout_width="225dp"
+            android:layout_height="238dp"
+            android:layout_below="@id/layout_masuk"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="40dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/leaderboard" />
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

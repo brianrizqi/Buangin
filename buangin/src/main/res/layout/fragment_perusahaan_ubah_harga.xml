@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.Perusahaan.DeskripsiFragment">
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout_bio_perusahaan_ubah_harga"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="16dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+    <!--android:layout_width="96dp"-->
+    <!--android:layout_height="96dp"-->
+    <!--android:background="@drawable/style_lingkaran"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/pp_perusahaan" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingLeft="10dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Ilham Prayogo"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Sinar Abadi"-->
+    <!--android:textSize="15sp"-->
+    <!--android:textStyle="italic|bold" />-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/perusahaan_daftar_bank_appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar Bank Smapah"
+                android:textColor="@color/warnaPutih"
+                android:textSize="16sp" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_ubah_harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/perusahaan_daftar_bank_appBar"
+        android:background="@color/warnaPutih"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/warnaUtama"
+        app:tabTextColor="@color/warnaGray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_ubah_harga"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_ubah_harga">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
